@@ -1,0 +1,68 @@
+.leaderboard-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.leaderboard-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.leaderboard-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.leaderboard-cell {
+  color: white;
+  text-align: left;
+}
+
+.leaderboard-cell.rank {
+  text-align: center;
+  font-weight: 600;
+}
+
+.leaderboard-cell.username {
+  font-weight: 500;
+}
+
+.leaderboard-cell.net-worth {
+  text-align: right;
+  font-weight: 600;
+}
+
+.leaderboard-cell.time {
+  text-align: right;
+  font-weight: 500;
+}
