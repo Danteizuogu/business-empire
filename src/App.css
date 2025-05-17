@@ -24,9 +24,57 @@ body {
 }
 
 .footer-content {
-  color: #4a90e2;
-  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
   padding: 0 2rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.email-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #357abd;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: #4a90e2;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  color: #357abd;
+  background-color: rgba(74, 144, 226, 0.1);
+  transform: translateY(-2px);
+}
+
+.social-icon i {
+  font-size: 1rem;
 }
 
 .page-container {

@@ -1,5 +1,14 @@
 import './App.css'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faTwitter, 
+  faLinkedin, 
+  faReddit, 
+  faGithub, 
+  faQuora, 
+  faFacebook 
+} from '@fortawesome/free-brands-svg-icons'
 import Leaderboard from './components/Leaderboard'
 import GoogleAd from './components/GoogleAd'
 
@@ -42,7 +51,31 @@ function App() {
       </div>
       <footer className="site-footer">
         <div className="footer-content">
-          <span>© 2025 Business Empire</span>
+          <div className="footer-left">
+            <a href="mailto:dante.izuogu@proton.me" className="email-link">
+              dante.izuogu@proton.me
+            </a>
+          </div>
+          <div className="footer-right">
+            <a href="https://twitter.com/danteizuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://linkedin.com/in/danteizuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://reddit.com/u/danteizuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faReddit} />
+            </a>
+            <a href="https://github.com/danteizuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://quora.com/profile/Dante-Izuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faQuora} />
+            </a>
+            <a href="https://facebook.com/danteizuogu" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
